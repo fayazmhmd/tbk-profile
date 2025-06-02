@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBK – The Burger Kitchen | Company Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF2DC; /* From PDF: Cream/Off-white */
+            color: #212221; /* From PDF: Dark Gray/Black */
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .nav-link {
+            transition: color 0.3s, border-color 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #CA6E49; /* From PDF: Orange-Red/Terracotta */
+            border-color: #CA6E49;
+        }
+        .tab.active {
+            background-color: #CA6E49; /* From PDF: Orange-Red/Terracotta */
+            color: #FFFFFF;
+        }
+        .timeline-item.active div:first-child {
+            background-color: #CA6E49; /* From PDF: Orange-Red/Terracotta */
+            color: #FFFFFF;
+        }
+        .timeline-item.active div:first-child::after {
+            border-color: #CA6E49;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-[#212221] font-serif">
+                TBK
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#story" class="nav-link font-semibold pb-1">Our Story</a>
+                <a href="#values" class="nav-link font-semibold pb-1">Our Values</a>
+                <a href="#journey" class="nav-link font-semibold pb-1">Our Journey</a>
+                <a href="#join" class="nav-link font-semibold pb-1">Join Us</a>
+                <a href="#careers" class="nav-link font-semibold pb-1">Careers</a>
+                <a href="#contact" class="nav-link font-semibold pb-1">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-[#212221] focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#story" class="block text-center py-2 px-4 text-sm hover:bg-[#FFF2DC]">Our Story</a>
+            <a href="#values" class="block text-center py-2 px-4 text-sm hover:bg-[#FFF2DC]">Our Values</a>
+            <a href="#journey" class="block text-center py-2 px-4 text-sm hover:bg-[#FFF2DC]">Our Journey</a>
+            <a href="#join" class="block text-center py-2 px-4 text-sm hover:bg-[#FFF2DC]">Join Us</a>
+            <a href="#careers" class="block text-center py-2 px-4 text-sm hover:bg-[#FFF2DC]">Careers</a>
+            <a href="#contact" class="block text-center py-2 px-4 text-sm hover:bg-[#FFF2DC]">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="py-20 md:py-32 bg-[#FFF2DC]">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-[#212221] mb-4">The Burger Kitchen.</h1>
+                <p class="text-xl md:text-2xl text-[#CA6E49]">Taste the Story. Crave the Identity.</p>
+            </div>
+        </section>
+
+        <section id="story" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-[#212221]">My Story</h2>
+                    <p class="text-center text-[#999792] mb-12">I wasn't born in a boardroom; I was born in a home kitchen during the 2020 pandemic. This section tells the story of how a lockdown experiment fueled by family, curiosity, and a love for food grew into the brand I am today. It's a tale of resilience, passion, and the comeback that defines my soul.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="space-y-4">
+                            <h3 class="text-2xl font-bold text-[#CA6E49]">The Spark</h3>
+                            <p class="text-[#212221] leading-relaxed">I was born in the heart of a rural Kerala home during the chaos of the 2020 pandemic. Fayaz, my creator, along with his wife Aamu, his sister Foofi, and their parents, started experimenting. No training, just pure curiosity. Then one day, they made a burger that changed everything. They shared it on Instagram. Someone wanted one. Then another. Then 30 burgers a week—all from a home kitchen. That’s when I first opened my eyes.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="text-2xl font-bold text-[#CA6E49]">The Comeback</h3>
+                            <p class="text-[#212221] leading-relaxed">In 2021, we got our kitchen—a cloud setup. But our story hit a roadblock. We shut down before we could learn to walk. The team went back to their day jobs. But we waited. And then Siyad saw me. He wasn't just another businessman—he was family. He gave me a home in Kowdiar, the heart of Trivandrum. A gourmet menu. A look. A soul. And just like that, I came back stronger.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="values" class="py-16 md:py-24 bg-[#FFF2DC]">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-[#212221]">What I Stand For</h2>
+                 <p class="text-center text-[#999792] max-w-3xl mx-auto mb-12">These aren't just words on a wall; they are the ingredients that make me who I am. This section outlines the core values that guide every decision, from crafting recipes to welcoming partners. Explore the principles that define the TBK experience.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center max-w-5xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-3 text-[#CA6E49]">❤️</div>
+                        <h3 class="text-xl font-bold mb-2 text-[#212221]">Heart</h3>
+                        <p class="text-[#999792]">Every recipe, every service, every handshake—we do it with warmth.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-3 text-[#CA6E49]">🤝</div>
+                        <h3 class="text-xl font-bold mb-2 text-[#212221]">Honesty</h3>
+                        <p class="text-[#999792]">Transparent kitchens, clean ingredients, honest pricing.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-3 text-[#CA6E49]">💡</div>
+                        <h3 class="text-xl font-bold mb-2 text-[#212221]">Innovation</h3>
+                        <p class="text-[#999792]">We experiment boldly with flavors while respecting classic traditions.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="text-4xl mb-3 text-[#CA6E49]">👨‍👩‍👧‍👦</div>
+                        <h3 class="text-xl font-bold mb-2 text-[#212221]">Family</h3>
+                        <p class="text-[#999792]">Our brand is powered by a close-knit team, and we extend that warmth to all.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="journey" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-[#212221]">My Journey</h2>
+                <p class="text-center text-[#999792] max-w-3xl mx-auto mb-16">My path has been one of unexpected turns, challenges, and exciting milestones. This interactive timeline charts my evolution from a simple home project to a growing brand. Click on each year to see the key moments that have shaped my story and discover what the future holds.</p>
+                <div class="max-w-5xl mx-auto">
+                    <div class="relative">
+                        <div class="absolute left-1/2 -translate-x-1/2 w-0.5 h-full bg-gray-200"></div>
+                        <div id="timeline-container" class="space-y-16">
+                            </div>
+                    </div>
+                    <div id="timeline-details" class="mt-12 p-8 bg-white rounded-lg shadow-lg min-h-[150px] transition-all duration-500">
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="py-16 md:py-24 bg-[#FFF2DC]">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-[#212221]">Join the Family</h2>
+                 <p class="text-center text-[#999792] max-w-3xl mx-auto mb-12">I am always looking for passionate people to join my story, whether as an intern, a partner institution, or a vendor. I believe in growing together. Use the tabs below to find out how you can become part of the TBK movement and what opportunities await.</p>
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex justify-center border-b-2 border-gray-200 mb-8">
+                        <button class="tab py-2 px-6 text-lg font-semibold text-[#999792] hover:text-[#CA6E49] transition" data-target="interns">For Interns</button>
+                        <button class="tab py-2 px-6 text-lg font-semibold text-[#999792] hover:text-[#CA6E49] transition" data-target="schools">For Schools</button>
+                        <button class="tab py-2 px-6 text-lg font-semibold text-[#999792] hover:text-[#CA6E49] transition" data-target="vendors">For Vendors</button>
+                    </div>
+                    <div id="tab-content" class="bg-white p-8 rounded-lg shadow-md">
+                        </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="careers" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-[#212221]">Careers at TBK</h2>
+                <p class="text-center text-[#999792] max-w-3xl mx-auto mb-12">Ready to craft a movement with us? We're always looking for passionate individuals who share our love for food, innovation, and genuine hospitality. Explore our current openings and find your place in the TBK family.</p>
+                <div id="job-listings" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    </div>
+                <div id="no-jobs-message" class="text-center text-[#999792] text-lg mt-8 hidden">
+                    No job openings at the moment. Please check back later!
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="py-16 md:py-24 bg-[#FFF2DC]">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#212221]">The Family Behind the Food</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
+                    <div class="bg-white p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-[#CA6E49]">Fouziya</h3>
+                        <p class="text-[#999792] mt-2">Sauce Specialist- Creators</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-[#CA6E49]">Fayaz</h3>
+                        <p class="text-[#999792] mt-2">Brand Conceptor- R&D</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-[#CA6E49]">Siyad</h3>
+                        <p class="text-[#999792] mt-2">CEO </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-[#CA6E49]">Farzeena</h3>
+                        <p class="text-[#999792] mt-2">Managing Director- Operations & CX</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg flex items-center justify-center">
+                        <p class="text-xl font-serif text-[#212221]">Together, we’re crafting a movement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="bg-[#212221] text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+            <p class="max-w-2xl mx-auto mb-8">Whether you want to work with us, supply to us, or just say hello, we'd love to hear from you. You won’t just be part of a restaurant. You’ll be part of a revival.</p>
+            <div class="space-y-4">
+                <p>📍 Ground Floor, Meenakshi Tower, Kuravankonam, Kowdiar P.O, Trivandrum, Kerala – 695003</p>
+                <p>📧contacttbkhr@gmail.com  | 📞 9037572470</p>
+                <p>📸 <a href="#" class="hover:text-[#087280] transition">@theburgerkitchen.india</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a.nav-link');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            const timelineData = [
+                {
+                    year: '2020',
+                    title: 'Born from Lockdown',
+                    description: 'Originated from a rural Kerala home during the 2020 lockdown. What started as a family experiment quickly grew through word-of-mouth and social media buzz.'
+                },
+                {
+                    year: '2021',
+                    title: 'The First Kitchen & A Pause',
+                    description: 'Launched a cloud kitchen in Trivandrum to meet growing demand. However, we faced local resistance and had to pause operations, a crucial learning moment in our journey.'
+                },
+                {
+                    year: '2024',
+                    title: 'The Relaunch: Stronger Than Ever',
+                    description: 'Relaunched with structure and ambition at a premium dine-in location in Kowdiar, Trivandrum. This marked our official comeback with a gourmet menu and a solid brand identity.'
+                },
+                {
+                    year: 'Future',
+                    title: 'Going Global',
+                    description: 'We are currently building towards a multi-city presence with a dream of taking our homegrown, soulful burger brand to the global stage.'
+                }
+            ];
+
+            const timelineContainer = document.getElementById('timeline-container');
+            const timelineDetails = document.getElementById('timeline-details');
+
+            timelineData.forEach((item, index) => {
+                const alignment = index % 2 === 0 ? 'md:ml-auto md:mr-4' : 'md:mr-auto md:ml-4';
+                const sideClass = index % 2 === 0 ? 'md:text-right' : 'md:text-left';
+                const timelineItem = document.createElement('div');
+                timelineItem.className = `timeline-item cursor-pointer w-full md:w-1/2 ${alignment}`;
+                timelineItem.dataset.index = index;
+                
+                timelineItem.innerHTML = `
+                    <div class="relative w-24 py-2 px-4 bg-white rounded-lg shadow-md text-center font-bold text-gray-700 transition-colors duration-300 ${sideClass}">
+                        ${item.year}
+                        <div class="absolute top-1/2 -translate-y-1/2 ${index % 2 === 0 ? '-right-4' : '-left-4'} w-3 h-3 bg-white border-2 border-gray-300 rounded-full"></div>
+                    </div>
+                `;
+                timelineContainer.appendChild(timelineItem);
+            });
+
+            function updateTimeline(index) {
+                const item = timelineData[index];
+                timelineDetails.innerHTML = `
+                    <h3 class="text-2xl font-bold text-[#CA6E49] mb-2">${item.title}</h3>
+                    <p class="text-[#212221]">${item.description}</p>
+                `;
+                document.querySelectorAll('.timeline-item').forEach(el => el.classList.remove('active'));
+                document.querySelector(`.timeline-item[data-index='${index}']`).classList.add('active');
+            }
+
+            timelineContainer.addEventListener('click', (e) => {
+                const target = e.target.closest('.timeline-item');
+                if (target) {
+                    const index = target.dataset.index;
+                    updateTimeline(index);
+                }
+            });
+            
+            updateTimeline(0);
+
+
+            const tabData = {
+                interns: {
+                    title: 'For Interns',
+                    points: [
+                        'Real-time exposure to gourmet food production and kitchen operations.',
+                        'Mentorship by passionate founders who rose from scratch.',
+                        'Opportunities to lead innovation projects in menu development and marketing.',
+                        'Learn branding and storytelling in collaboration with Gen AI tools.'
+                    ]
+                },
+                schools: {
+                    title: 'For Culinary & Hospitality Schools',
+                    points: [
+                        'A learning environment combining food values with modern commercial practices.',
+                        'Access to real entrepreneurial stories and open kitchen systems.',
+                        'A transparent, Instagrammable, Gen Z-friendly outlet that encourages creativity.',
+                        'A space for students to gain practical, real-world experience.'
+                    ]
+                },
+                vendors: {
+                    title: 'For Vendors',
+                    points: [
+                        'A growth-focused brand with long-term strategic goals.',
+                        'Commitment to consistent quality standards and ethical sourcing.',
+                        'A transparent and reliable procurement process.',
+                        'Opportunities for collaborative innovation in packaging and ingredients.'
+                    ]
+                }
+            };
+            
+            const tabContainer = document.querySelector('#join .flex');
+            const tabContent = document.getElementById('tab-content');
+
+            function updateTabs(target) {
+                const data = tabData[target];
+                let pointsHTML = data.points.map(point => `<li class="flex items-start"><span class="text-[#CA6E49] mr-3 mt-1">✓</span>${point}</li>`).join('');
+                tabContent.innerHTML = `<ul class="space-y-3 text-[#212221]">${pointsHTML}</ul>`;
+                
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelector(`.tab[data-target='${target}']`).classList.add('active');
+            }
+
+            tabContainer.addEventListener('click', (e) => {
+                if (e.target.classList.contains('tab')) {
+                    updateTabs(e.target.dataset.target);
+                }
+            });
+
+            updateTabs('interns');
+
+            const jobOpenings = [
+                {
+                    title: 'Operations Manager',
+                    location: 'Trivandrum, Kerala',
+                    type: 'Full-time',
+                    description: 'As the Operations Captain, you are not just running a restaurant — you are leading a living brand experience. This role is for someone who can own the floor, run the kitchen like clockwork, and keep our customers smiling — without having to run to the founders every time something breaks. You’ll be the one the team looks up to during rush hours, the one who solves problems before anyone notices them, and the one who ensures that TBK stays sharp, soulful, and scalable — day after day.',
+                    requirements: [
+                        'Lead daily operations (BOH + FOH) like a pro — prep to close.',
+                        'Manage a young, energetic team: train, uplift, and lead by example.',
+                        'Handle stock, vendor relationships, hygiene, and opening/closing rituals.',
+                        'Maintain quality, consistency, and speed — every hour, every dish.',
+                        'Own customer feedback, solve issues gracefully, and make people feel heard.',
+                        'Coordinate with founders for reporting, insights, and culture-building.',
+                        'You’ve run a café, QSR, or casual resto for 2+ years.',
+                        'You think like an entrepreneur, not an employee.',
+                        'You’re calm under pressure — especially when 10 orders come in at once.',
+                        'You believe service is sacred — and food is emotional.',
+                        'You’re digitally aware (basic apps, inventory tools, and yes, Insta stories).',
+                        'You know that managing people means listening, not shouting.'
+                    ]
+                },
+                {
+                    title: 'Head Chef',
+                    location: 'Trivandrum, Kerala',
+                    type: 'Full-time',
+                    description: 'Lead our kitchen team, innovate new menu items, and maintain high culinary standards.',
+                    requirements: [
+                        'Minimum 5 years experience in a high-volume kitchen.',
+                        'Proven leadership and team management skills.',
+                        'Creativity in menu development and passion for gourmet burgers.'
+                    ]
+                },
+                {
+                    title: 'Restaurant Manager',
+                    location: 'Trivandrum, Kerala',
+                    type: 'Full-time',
+                    description: 'Oversee daily operations, ensure excellent customer service, and manage staff.',
+                    requirements: [
+                        'Minimum 3 years experience in restaurant management.',
+                        'Strong communication and organizational skills.',
+                        'Ability to work in a fast-paced environment.'
+                    ]
+                },
+                {
+                    title: 'Marketing Executive',
+                    location: 'Trivandrum, Kerala',
+                    type: 'Full-time',
+                    description: 'Develop and execute marketing strategies, manage social media, and enhance brand visibility.',
+                    requirements: [
+                        'Bachelor’s degree in Marketing or related field.',
+                        'Experience with digital marketing and social media campaigns.',
+                        'Excellent written and verbal communication skills.'
+                    ]
+                },
+                {
+                    title: 'Kitchen Staff',
+                    location: 'Trivandrum, Kerala',
+                    type: 'Part-time',
+                    description: 'Assist chefs in food preparation, maintain kitchen cleanliness, and ensure smooth service.',
+                    requirements: [
+                        'Prior experience in a kitchen environment preferred.',
+                        'Ability to work in a team and follow instructions.',
+                        'Enthusiastic and willing to learn.'
+                    ]
+                },
+                {
+                    title: 'Social Media Intern',
+                    location: 'Trivandrum, Kerala (Remote possible)',
+                    type: 'Internship',
+                    description: 'Help us tell our story online! Create engaging content, manage social media platforms, and interact with our community.',
+                    requirements: [
+                        'Strong understanding of social media platforms (Instagram, Facebook).',
+                        'Excellent writing and visual storytelling skills.',
+                        'Basic graphic design or video editing experience a plus.',
+                        'Enthusiasm for food and brand building.'
+                    ]
+                }
+            ];
+
+            const jobListingsContainer = document.getElementById('job-listings');
+            const noJobsMessage = document.getElementById('no-jobs-message');
+
+            function renderJobListings() {
+                if (jobOpenings.length === 0) {
+                    noJobsMessage.classList.remove('hidden');
+                    jobListingsContainer.innerHTML = '';
+                    return;
+                }
+
+                noJobsMessage.classList.add('hidden');
+                jobListingsContainer.innerHTML = '';
+                jobOpenings.forEach(job => {
+                    const jobCard = document.createElement('div');
+                    jobCard.className = 'bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300';
+                    let requirementsHtml = job.requirements.map(req => `<li class="text-[#999792] text-sm">${req}</li>`).join('');
+                    jobCard.innerHTML = `
+                        <h3 class="text-xl font-bold text-[#CA6E49] mb-2">${job.title}</h3>
+                        <p class="text-[#212221] mb-1"><strong>Location:</strong> ${job.location}</p>
+                        <p class="text-[#212221] mb-3"><strong>Type:</strong> ${job.type}</p>
+                        <p class="text-[#212221] mb-4">${job.description}</p>
+                        <h4 class="font-semibold text-[#212221] mb-2">Requirements:</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            ${requirementsHtml}
+                        </ul>
+                        <button class="mt-6 w-full bg-[#CA6E49] text-white py-2 px-4 rounded-md hover:bg-[#087280] transition-colors duration-300">Apply Now</button>
+                    `;
+                    jobListingsContainer.appendChild(jobCard);
+                });
+            }
+
+            renderJobListings();
+        });
+    </script>
+</body>
+</html>
